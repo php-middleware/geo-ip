@@ -1,0 +1,29 @@
+{
+    "name": "php-middleware/geo-ip",
+    "description": "Geo IP PSR-7 middleware",
+    "type": "library",
+    "keywords": [
+        "middleware",
+        "psr",
+        "psr-7",
+        "geoip"
+    ],
+    "require": {
+        "php": ">=5.5",
+        "psr/http-message": "^1.0",
+        "willdurand/geocoder": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpMiddleware\\GeoIp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpMiddlewareTest\\GeoIp\\": "test/"
+        }
+    }
+}
